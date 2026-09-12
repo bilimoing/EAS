@@ -1,0 +1,120 @@
+Items: {
+	IchorStone: {
+		Tooltip: Melee attacks inflict Ichor
+		DisplayName: Ichor Stone
+	}
+
+	FrozenStone: {
+		Tooltip: Melee attacks inflict Frozen flame
+		DisplayName: Frozen Stone
+	}
+
+	CurseStone: {
+		Tooltip: Melee attacks inflict Curse flame
+		DisplayName: Curse Stone
+	}
+
+	IchorGloves: {
+		DisplayName: Ichor Gauntlet
+		Tooltip:
+			'''
+			Increases melee knockback and melee attacks inflict Ichor damage
+			12% increased melee damage and speed
+			Enables auto swing for melee weapons and whips
+			Increases the size of melee weapons
+			'''
+	}
+
+	CurseGloves: {
+		DisplayName: Cursed Gauntlet
+		Tooltip:
+			'''
+			Increases melee knockback and melee attacks inflict Curse flame damage
+			12% increased melee damage and speed
+			Enables auto swing for melee weapons and whips
+			Increases the size of melee weapons
+			'''
+	}
+
+	FrozenGloves: {
+		DisplayName: Frozen Gauntlet
+		Tooltip:
+			'''
+			Increases melee knockback and melee attacks inflict Frozen flame damage
+			12% increased melee damage and speed
+			Enables auto swing for melee weapons and whips
+			Increases the size of melee weapons
+			'''
+	}
+
+	IchorQuiver: {
+		Tooltip:
+			'''
+			Increases arrow damage by 10% and greatly increases arrow speed
+			20% chance not to consume arrows
+			Lights wooden arrows ablaze
+			'Quiver in fear!'
+			'''
+		DisplayName: Ichor Quiver
+	}
+
+	FrostfireQuiver: {
+		Tooltip:
+			'''
+			Increases arrow damage by 10% and greatly increases arrow speed
+			20% chance not to consume arrows
+			Freezes wooden arrows
+			'Quiver in fear!'
+			'''
+		DisplayName: Frostfire Quiver
+	}
+
+	CursedQuiver: {
+		Tooltip:
+			'''
+			Increases arrow damage by 10% and greatly increases arrow speed
+			20% chance not to consume arrows
+			Curses wooden arrows
+			'Quiver in fear!'
+			'''
+		DisplayName: Cursed Quiver
+	}
+
+	VenomStone: {
+		Tooltip: Melee attacks inflict Venom
+		DisplayName: Venom Stone
+	}
+
+	VenomQuiver: {
+		Tooltip:
+			'''
+			Increases arrow damage by 10% and greatly increases arrow speed
+			20% chance not to consume arrows
+			Poisons wooden arrows
+			'Quiver in fear!'
+			'''
+		DisplayName: Venom Quiver
+	}
+
+	VenomGloves: {
+		Tooltip:
+			'''
+			Increases melee knockback and melee attacks inflict Venom damage
+			12% increased melee damage and speed
+			Enables auto swing for melee weapons and whips
+			Increases the size of melee weapons
+			'''
+		DisplayName: Venom Gloves
+	}
+
+	DeathBone: {
+		Tooltip:
+			'''
+			Summons tiny skeleton hands to attack enemies
+			2 hands during daytime, 4 hands at night (double damage at night)
+			'''
+		DisplayName: Death Bone
+	}
+}
+
+Projectiles.SkeletonHand.DisplayName: Skeleton Hand

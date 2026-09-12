@@ -1,0 +1,120 @@
+Items: {
+	IchorStone: {
+		Tooltip: 近战攻击造成灵液
+		DisplayName: 灵液石
+	}
+
+	FrozenStone: {
+		Tooltip: 近战攻击造成霜焰
+		DisplayName: 极寒石
+	}
+
+	CurseStone: {
+		Tooltip: 近战攻击造成诅咒焰
+		DisplayName: 诅咒石
+	}
+
+	IchorGloves: {
+		DisplayName: 灵液手套
+		Tooltip:
+			'''
+			提高近战击退，近战攻击造成灵液
+			         近战伤害和近战速度各提高12%
+			         近战武器和鞭子可自动挥舞
+			         加大近战武器的尺寸
+			'''
+	}
+
+	CurseGloves: {
+		DisplayName: 诅咒手套
+		Tooltip:
+			'''
+			提升近战击退力，近战攻击造成诅咒焰
+			近战伤害和近战速度各提高12%
+			         近战武器和鞭子可自动挥舞
+			         加大近战武器的尺寸
+			'''
+	}
+
+	FrozenGloves: {
+		DisplayName: 极寒手套
+		Tooltip:
+			'''
+			提升近战击退力，近战攻击造成霜焰
+			近战伤害和近战速度各提高12%
+			近战武器和鞭子可自动挥舞
+			加大近战武器的尺寸
+			'''
+	}
+
+	IchorQuiver: {
+		Tooltip:
+			'''
+			箭的伤害提高10%，箭的速度大大提高
+			20%几率不消耗箭
+			点燃木箭，火光熊熊
+			“在恐惧中颤抖吧！”
+			'''
+		DisplayName: 灵液箭袋
+	}
+
+	FrostfireQuiver: {
+		Tooltip:
+			'''
+			箭的伤害提高10%，箭的速度大大提高
+			20%几率不消耗箭
+			冻结木箭，冰光闪闪
+			“在恐惧中颤抖吧！”
+			'''
+		DisplayName: 极寒箭袋
+	}
+
+	CursedQuiver: {
+		Tooltip:
+			'''
+			箭的伤害提高10%，箭的速度大大提高
+			20%几率不消耗箭
+			诅咒木箭，暗光闪闪
+			“在恐惧中颤抖吧！”
+			'''
+		DisplayName: 诅咒箭袋
+	}
+
+	VenomStone: {
+		Tooltip: 近战攻击造成毒液
+		DisplayName: 毒液石
+	}
+
+	VenomQuiver: {
+		Tooltip:
+			'''
+			箭的伤害提高10%，箭的速度大大提高
+			20%几率不消耗箭
+			毒液木箭，毒性弥漫
+			“在恐惧中颤抖吧！”
+			'''
+		DisplayName: 毒液箭袋
+	}
+
+	VenomGloves: {
+		Tooltip:
+			'''
+			提升近战击退力，近战攻击造成毒液
+			近战伤害和近战速度各提高12%
+			近战武器和鞭子可自动挥舞
+			加大近战武器的尺寸
+			'''
+		DisplayName: 毒液手套
+	}
+
+	DeathBone: {
+		Tooltip:
+			'''
+			召唤小骷髅手攻击敌人
+			白天2个，晚上4个（双倍伤害）
+			'''
+		DisplayName: 死亡之骨
+	}
+}
+
+Projectiles.SkeletonHand.DisplayName: 小骷髅手

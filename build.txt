@@ -1,0 +1,6 @@
+displayName = 更多饰品栏
+displayName.zh-Hans = 更多饰品栏
+author = 末泠
+version = 0.0.6.7
+homepage = https://space.bilibili.com/1196822829?spm_id_from=333.1007.0.0
+includeSource = true
