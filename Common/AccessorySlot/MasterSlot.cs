@@ -20,7 +20,7 @@ namespace EAS.Common.AccessorySlot
 
         public override bool IsVisibleWhenNotEnabled() => false;
 
-        public override string FunctionalTexture => "EAS/Content/Items/Accessories/DeathBone";
+        public override string FunctionalTexture => "EAS/Assets/Textures/UI/Master";
 
         public override void OnMouseHover(AccessorySlotType context)
         {
