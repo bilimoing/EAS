@@ -35,5 +35,7 @@ namespace EAS.Common.Configs
         public bool MusicBox;
         [DefaultValue(true)]
         public bool Glove;
+        [DefaultValue(true)]
+        public bool Golf;
     }
 }

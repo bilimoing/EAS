@@ -211,6 +211,8 @@ Message: {
 	15: Waist
 	16: Wing
 	17: Glove
+	18: Golf
+	19: Golf Ball
 }
 
 Configs: {
@@ -285,6 +287,11 @@ Configs: {
 
 		Glove: {
 			Label: "[i:897] Glove Slot"
+			Tooltip: ""
+		}
+
+		Golf: {
+			Label: "[i:3989] Golf Slot"
 			Tooltip: ""
 		}
 	}

@@ -212,6 +212,8 @@ Message: {
 	15: 腰带
 	16: 翅膀
 	17: 手套
+	18: 高尔夫
+	19: 高尔夫球
 }
 
 Configs: {
@@ -286,6 +288,11 @@ Configs: {
 
 		Glove: {
 			Label: "[i:897] 手套栏"
+			Tooltip: ""
+		}
+
+		Golf: {
+			Label: "[i:3989] 高尔夫栏"
 			Tooltip: ""
 		}
 	}
