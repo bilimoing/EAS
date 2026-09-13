@@ -125,6 +125,70 @@ Items: {
 			Double tap in any direction to dash
 			'''
 	}
+
+	LifeFlower: {
+		DisplayName: Life Flower
+		Tooltip: Automatically use health potions when needed
+	}
+
+	LifeCloak: {
+		DisplayName: Life Cloak
+		Tooltip:
+			'''
+			Automatically use health potions when needed
+			Causes stars to fall after taking damage
+			Stars restore mana when collected
+			'''
+	}
+
+	FlowerFlower: {
+		DisplayName: Flower Flower
+		Tooltip:
+			'''
+			8% reduced mana usage
+			Increases damage protection by 8%
+			Automatically use health and mana potions when needed
+			You feel the sight deep in the earth
+			You feel your body getting colder and colder
+			The jungle is closing in
+			You lost your gold medal
+			You feel miserable
+			The eyes of cold and unfeeling look upon you
+			Flower Flower is coming...
+			'''
+	}
+
+	OilBarrel: {
+		DisplayName: Oil Barrel
+		Tooltip:
+			'''
+			Melee and ranged attacks will cover enemies with oil
+			Covered enemies on fire will deal additional damage
+			'''
+	}
+
+	BoilingWaterBottle: {
+		DisplayName: Boiling Water
+		Tooltip: Increase movement speed, defense and breathing time in the water
+	}
+
+	BottledShimmer: {
+		DisplayName: Bottled Shimmer
+		Tooltip:
+			'''
+			Grants luck while equipped
+			Slightly increases all damage while inside shimmer liquid
+			'''
+	}
+
+	FuzzyHandcuffs: {
+		DisplayName: Fuzzy Handcuffs
+		Tooltip:
+			'''
+			+30% whip range
+			+15% whip attack speed
+			'''
+	}
 }
 
 Projectiles.SkeletonHand.DisplayName: Skeleton Hand

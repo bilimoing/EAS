@@ -17,17 +17,22 @@ public class AccPlayer : ModPlayer
     public bool HasVenomQuiver;
     public bool DeathBone;
     public bool ObsidianScarf;
+    public bool LifeFlower;
+    public bool OilBarrel;
+    public bool BoilingWaterBottle;
+    public bool BottledShimmer;
+    public bool FuzzyHandcuffs;
     public int DashDir = -1;
     public bool DashActive;
     public int DashDelay = MAX_DASH_DELAY;
     public int DashTimer = MAX_DASH_TIMER;
-    public readonly float DashVelocity = 15f;
-    public static readonly int MAX_DASH_DELAY = 10;
-    public static readonly int MAX_DASH_TIMER = 10;
-    public static readonly int DashDown = 0;
-    public static readonly int DashUp = 1;
-    public static readonly int DashRight = 2;
-    public static readonly int DashLeft = 3;
+    public const float DashVelocity = 15f;
+    public const int MAX_DASH_DELAY = 10;
+    public const int MAX_DASH_TIMER = 10;
+    public const int DashDown = 0;
+    public const int DashUp = 1;
+    public const int DashRight = 2;
+    public const int DashLeft = 3;
 
     public override void ResetEffects()
     {
@@ -41,6 +46,12 @@ public class AccPlayer : ModPlayer
         HasVenomQuiver = false;
         DeathBone = false;
         ObsidianScarf = false;
+        LifeFlower = false;
+        OilBarrel = false;
+        BoilingWaterBottle = false;
+        BottledShimmer = false;
+        FuzzyHandcuffs = false;
+        
         bool dashAccessoryEquipped = false;
         for (int i = 3; i < 8 + Player.extraAccessorySlots; i++)
         {
@@ -97,6 +108,41 @@ public class AccPlayer : ModPlayer
         HasFrozenQuiver = false;
         DeathBone = false;
         ObsidianScarf = false;
+        LifeFlower = false;
+        BoilingWaterBottle = false;
+        OilBarrel = false;
+        BottledShimmer = false;
+        FuzzyHandcuffs = false;
+    }
+    
+    public override void ModifyLuck(ref float luck)
+    {
+        if (BottledShimmer)
+        {
+            luck += 0.03f; 
+        }
+    }
+    
+    public override void ModifyHitNPCWithProj(Projectile proj, NPC target, ref NPC.HitModifiers modifiers)
+    {
+        if (BottledShimmer)
+        {
+            if (Player.ZoneShimmer)
+            {
+                modifiers.FinalDamage *= 1.08f;
+            }
+        }
+    }
+
+    public override void ModifyHitNPCWithItem(Item item, NPC target, ref NPC.HitModifiers modifiers)
+    {
+        if (BottledShimmer)
+        {
+            if (Player.ZoneShimmer)
+            {
+                modifiers.FinalDamage *= 1.08f;
+            }
+        }
     }
 
     public override void OnHitNPCWithItem(Item item, NPC target, NPC.HitInfo hit, int damageDone)
@@ -120,6 +166,11 @@ public class AccPlayer : ModPlayer
         {
             target.AddBuff(BuffID.Venom, 600);
         }
+        
+        if (OilBarrel && item.CountsAsClass(DamageClass.Melee))
+        {
+            target.AddBuff(BuffID.Oiled, 240);
+        }
     }
 
     public override void OnHitNPCWithProj(Projectile proj, NPC target, NPC.HitInfo hit, int damageDone)
@@ -142,6 +193,38 @@ public class AccPlayer : ModPlayer
         if (CurseStone && proj.CountsAsClass(DamageClass.Melee))
         {
             target.AddBuff(BuffID.CursedInferno, 600);
+        }
+        
+        if (OilBarrel && proj.CountsAsClass(DamageClass.Melee))
+        {
+            target.AddBuff(BuffID.Oiled, 180);
+        }
+        if (OilBarrel && proj.CountsAsClass(DamageClass.Ranged))
+        {
+            target.AddBuff(BuffID.Oiled, 180);
+        }
+    }
+    
+    public override void PostHurt(Player.HurtInfo info)
+    {
+        if (LifeFlower && Player.QuickHeal_GetItemToUse() != null && Player.statLife + Player.QuickHeal_GetItemToUse().healLife < Player.statLifeMax2)
+        {
+            Player.QuickHeal();
+        }
+    }
+
+    public override void PostUpdate()
+    {
+        if (BoilingWaterBottle)
+        {
+            Dust.NewDust(Player.position, Player.width, Player.height, DustID.Water, 0f, 0f, 100);
+            bool isSubmerged = Player.wet;
+            if (isSubmerged)
+            {
+                Player.moveSpeed += 0.2f;
+                Player.statDefense += 5;
+                Player.breathMax += 30;
+            }
         }
     }
 }

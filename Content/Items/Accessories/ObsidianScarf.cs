@@ -1,7 +1,6 @@
 ﻿using EAS.Common.Players;
 using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.GameContent.Creative;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -12,7 +11,7 @@ namespace EAS.Content.Items.Accessories
     {
         public override void SetStaticDefaults()
         {
-            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1;
+            Item.ResearchUnlockCount = 1;
         }
 
         public override void SetDefaults()
@@ -35,15 +34,15 @@ namespace EAS.Content.Items.Accessories
             if (mp.DashTimer == AccPlayer.MAX_DASH_TIMER)
             {
                 Vector2 newVelocity = player.velocity;
-                if ((mp.DashDir == AccPlayer.DashUp && player.velocity.Y > -mp.DashVelocity) || (mp.DashDir == AccPlayer.DashDown && player.velocity.Y < mp.DashVelocity))
+                if ((mp.DashDir == AccPlayer.DashUp && player.velocity.Y > -AccPlayer.DashVelocity) || (mp.DashDir == AccPlayer.DashDown && player.velocity.Y < AccPlayer.DashVelocity))
                 {
                     float dashDirection = (mp.DashDir == AccPlayer.DashDown) ? 1f : -1.3f;
-                    newVelocity.Y = dashDirection * mp.DashVelocity;
+                    newVelocity.Y = dashDirection * AccPlayer.DashVelocity;
                 }
-                else if ((mp.DashDir == AccPlayer.DashLeft && player.velocity.X > -mp.DashVelocity) || (mp.DashDir == AccPlayer.DashRight && player.velocity.X < mp.DashVelocity))
+                else if ((mp.DashDir == AccPlayer.DashLeft && player.velocity.X > -AccPlayer.DashVelocity) || (mp.DashDir == AccPlayer.DashRight && player.velocity.X < AccPlayer.DashVelocity))
                 {
                     int dashDirection2 = mp.DashDir == AccPlayer.DashRight ? 1 : -1;
-                    newVelocity.X = dashDirection2 * mp.DashVelocity;
+                    newVelocity.X = dashDirection2 * AccPlayer.DashVelocity;
                 }
                 player.velocity = newVelocity;
             }
