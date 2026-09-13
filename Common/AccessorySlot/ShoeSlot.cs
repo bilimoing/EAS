@@ -20,7 +20,7 @@ namespace EAS.Common.AccessorySlot
 
         public override bool IsVisibleWhenNotEnabled() => false;
 
-        public override string FunctionalTexture => "Terraria/Images/Item_" + 5000;
+        public override string FunctionalTexture => "EAS/Assets/Textures/UI/Shoe";
 
         public override void OnMouseHover(AccessorySlotType context)
         {

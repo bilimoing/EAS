@@ -1,6 +1,5 @@
 ﻿using EAS.Common.Configs;
 using Terraria;
-using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
@@ -23,7 +22,7 @@ namespace EAS.Common.AccessorySlot
 
         public override bool IsVisibleWhenNotEnabled() => false;
 
-        public override string FunctionalTexture => "Terraria/Images/Item_" + ItemID.AngelWings;
+        public override string FunctionalTexture => "EAS/Assets/Textures/UI/Wing";
 
         public override void OnMouseHover(AccessorySlotType context)
         {

@@ -20,21 +20,17 @@ namespace EAS.Common.AccessorySlot
 
 
         public override bool IsVisibleWhenNotEnabled() => false;
-        public override string FunctionalTexture => "Terraria/Images/Item_" + 1164;
+        
+        public override string FunctionalTexture => "EAS/Assets/Textures/UI/Balloon";
 
         public override void OnMouseHover(AccessorySlotType context)
         {
-
-            switch (context)
+            Main.hoverItemName = context switch
             {
-                case AccessorySlotType.FunctionalSlot:
-                case AccessorySlotType.VanitySlot:
-                    Main.hoverItemName = Language.GetTextValue("Mods.EAS.Message.5");
-                    break;
-                case AccessorySlotType.DyeSlot:
-                    Main.hoverItemName = Language.GetTextValue("Mods.EAS.Message.4");
-                    break;
-            }
+                AccessorySlotType.FunctionalSlot or AccessorySlotType.VanitySlot => Language.GetTextValue("Mods.EAS.Message.5"),
+                AccessorySlotType.DyeSlot => Language.GetTextValue("Mods.EAS.Message.4"),
+                _ => Main.hoverItemName
+            };
         }
     }
 }

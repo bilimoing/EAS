@@ -20,7 +20,7 @@ public class GloveSlot : ModAccessorySlot
 
     public override bool IsVisibleWhenNotEnabled() => false;
 
-    public override string FunctionalTexture => "Terraria/Images/Item_" + 897;
+    public override string FunctionalTexture => "EAS/Assets/Textures/UI/Glove";
 
     public override void OnMouseHover(AccessorySlotType context)
     {
