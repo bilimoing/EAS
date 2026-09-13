@@ -111,10 +111,117 @@ Items: {
 		Tooltip:
 			'''
 			Summons tiny skeleton hands to attack enemies
-			2 hands during daytime, 4 hands at night (double damage at night)
+			2 hands during daytime (double damage at night), 4 hands at night
 			'''
 		DisplayName: Death Bone
+	}
+
+	ObsidianScarf: {
+		DisplayName: Obsidian Scarf
+		Tooltip:
+			'''
+			Increased movement speed by 2%
+			Immune lava
+			Double tap in any direction to dash
+			'''
 	}
 }
 
 Projectiles.SkeletonHand.DisplayName: Skeleton Hand
+
+Message: {
+	1: More accessories slot:
+	2: Replace box items...
+	3: Cloak
+	4: Dye
+	5: Balloon
+	6: Beard
+	7: Expert
+	8: Mask
+	9: Life Regen
+	10: Master
+	11: Music Box
+	12: Scarf
+	13: Shield
+	14: Shoe
+	15: Waist
+	16: Wing
+	17: Glove
+}
+
+Configs: {
+	MyConfig: {
+		DisplayName: Accessories Slots Configs
+		Headers.Display: Display Configs
+
+		Balloon: {
+			Label: "[i:1164] Balloon Slot"
+			Tooltip: ""
+		}
+
+		Shield: {
+			Label: "[i:1613] Shield Slot"
+			Tooltip: ""
+		}
+
+		Shoe: {
+			Label: "[i:5000] Shoe Slot"
+			Tooltip: ""
+		}
+
+		Waist: {
+			Label: "[i:963] Waist Slot"
+			Tooltip: ""
+		}
+
+		Wing: {
+			Label: "[i:493] Wing Slot"
+			Tooltip: ""
+		}
+
+		Beard: {
+			Label: "[i:5106] Beard Slot"
+			Tooltip: ""
+		}
+
+		Neck: {
+			Label: "[i:3809] Scarf Slot"
+			Tooltip: ""
+		}
+
+		Back: {
+			Label: "[i:2287] Cloak Slot"
+			Tooltip: ""
+		}
+
+		Face: {
+			Label: "[i:3999] Mask Slot"
+			Tooltip: ""
+		}
+
+		Expert: {
+			Label: "[i:3090] Expert Slot"
+			Tooltip: ""
+		}
+
+		LifeRegen: {
+			Label: "[i:49] Life Regen Slot"
+			Tooltip: ""
+		}
+
+		Master: {
+			Label: "[i:EAS/DeathBone] Master Slot"
+			Tooltip: ""
+		}
+
+		MusicBox: {
+			Label: "[i:576] Music Box Slot"
+			Tooltip: ""
+		}
+
+		Glove: {
+			Label: "[i:897] Glove Slot"
+			Tooltip: ""
+		}
+	}
+}

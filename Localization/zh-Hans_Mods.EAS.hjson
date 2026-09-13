@@ -111,10 +111,117 @@ Items: {
 		Tooltip:
 			'''
 			召唤小骷髅手攻击敌人
-			白天2个，晚上4个（双倍伤害）
+			白天2个（双倍伤害），晚上4个
 			'''
 		DisplayName: 死亡之骨
+	}
+
+	ObsidianScarf: {
+		DisplayName: 黑曜石围巾
+		Tooltip:
+			'''
+			增加2%移动速度
+			免疫岩浆
+			双击冲刺
+			'''
 	}
 }
 
 Projectiles.SkeletonHand.DisplayName: 小骷髅手
+
+Message: {
+	1: 更多饰品栏：
+	2: 替换箱子物品中...
+	3: 披风
+	4: 染料
+	5: 气球
+	6: 胡子
+	7: 专家
+	8: 面具
+	9: 生命再生
+	10: 大师
+	11: 八音盒
+	12: 围巾
+	13: 盾
+	14: 鞋
+	15: 腰带
+	16: 翅膀
+	17: 手套
+}
+
+Configs: {
+	MyConfig: {
+		DisplayName: 饰品栏设置
+		Headers.Display: 饰品栏显示设置
+
+		Balloon: {
+			Label: "[i:1164] 气球栏"
+			Tooltip: ""
+		}
+
+		Shield: {
+			Label: "[i:1613] 盾栏"
+			Tooltip: ""
+		}
+
+		Shoe: {
+			Label: "[i:5000] 鞋栏"
+			Tooltip: ""
+		}
+
+		Waist: {
+			Label: "[i:963] 腰带栏"
+			Tooltip: ""
+		}
+
+		Wing: {
+			Label: "[i:493] 翅膀栏"
+			Tooltip: ""
+		}
+
+		Beard: {
+			Label: "[i:5106] 胡子栏"
+			Tooltip: ""
+		}
+
+		Neck: {
+			Label: "[i:3809] 围巾栏"
+			Tooltip: ""
+		}
+
+		Back: {
+			Label: "[i:2287] 披风栏"
+			Tooltip: ""
+		}
+
+		Face: {
+			Label: "[i:3999] 面具栏"
+			Tooltip: ""
+		}
+
+		Expert: {
+			Label: "[i:3090] 专家栏"
+			Tooltip: ""
+		}
+
+		LifeRegen: {
+			Label: "[i:49] 生命再生栏"
+			Tooltip: ""
+		}
+
+		Master: {
+			Label: "[i:EAS/DeathBone] 大师栏"
+			Tooltip: ""
+		}
+
+		MusicBox: {
+			Label: "[i:576] 八音盒栏"
+			Tooltip: ""
+		}
+
+		Glove: {
+			Label: "[i:897] 手套栏"
+			 Tooltip: ""
+		}
+	}
+}
