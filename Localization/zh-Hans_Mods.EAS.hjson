@@ -190,6 +190,20 @@ Items: {
 			增加15%鞭子攻击速度
 			'''
 	}
+
+	TerrapinEmblem: {
+		DisplayName: 巨龟徽章
+		Tooltip: 近战伤害提高20%
+	}
+
+	TerrapinEmblem2: {
+		DisplayName: 冰龟徽章
+		Tooltip:
+			'''
+			近战伤害提高30%
+			生命值低于50%时，在持有者周围放置可降低25%伤害的护罩
+			'''
+	}
 }
 
 Projectiles.SkeletonHand.DisplayName: 小骷髅手
@@ -293,6 +307,11 @@ Configs: {
 
 		Golf: {
 			Label: "[i:3989] 高尔夫栏"
+			Tooltip: ""
+		}
+
+		Armor: {
+			Label: "[i:81] 盔甲栏"
 			Tooltip: ""
 		}
 	}

@@ -1,0 +1,13 @@
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\EAS.csproj.AssemblyReference.cache
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\EAS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\EAS.AssemblyInfoInputs.cache
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\EAS.AssemblyInfo.cs
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\EAS.csproj.CoreCompileInputs.cache
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\EAS.sourcelink.json
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\bin\Debug\net10.0\EAS.deps.json
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\bin\Debug\net10.0\EAS.dll
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\bin\Debug\net10.0\EAS.pdb
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\EAS.dll
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\refint\EAS.dll
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\EAS.pdb
+D:\Documents\My Games\Terraria\tModLoader\ModSources\EAS\obj\Debug\net10.0\ref\EAS.dll

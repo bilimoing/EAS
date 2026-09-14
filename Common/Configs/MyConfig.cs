@@ -37,5 +37,7 @@ namespace EAS.Common.Configs
         public bool Glove;
         [DefaultValue(true)]
         public bool Golf;
+        [DefaultValue(true)]
+        public bool Armor;
     }
 }

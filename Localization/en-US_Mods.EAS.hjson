@@ -189,6 +189,20 @@ Items: {
 			+15% whip attack speed
 			'''
 	}
+
+	TerrapinEmblem: {
+		DisplayName: Giant Turtle Emblem
+		Tooltip: 20% increased melee damage
+	}
+
+	TerrapinEmblem2: {
+		DisplayName: Ice Turtle Emblem
+		Tooltip:
+			'''
+			30% increased melee damage
+			Puts a shell around the owner when below 50% life that reduces damage by 25%
+			'''
+	}
 }
 
 Projectiles.SkeletonHand.DisplayName: Skeleton Hand
@@ -292,6 +306,11 @@ Configs: {
 
 		Golf: {
 			Label: "[i:3989] Golf Slot"
+			Tooltip: ""
+		}
+
+		Armor: {
+			Label: "[i:81] Armor Slot"
 			Tooltip: ""
 		}
 	}
